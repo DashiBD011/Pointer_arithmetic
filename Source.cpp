@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 
 using std::cout;
 using std::endl;
@@ -8,9 +8,7 @@ int Sum(int n, int value, ...)
 	int sum = 0;
 	int* start = &value;
 	for (int i = 0; i < n; i++)
-	{
 		sum += *start++;
-	}
 	return sum;
 }
 
@@ -25,9 +23,10 @@ int Mul(int value, ...)
 
 void main()
 {
+
 	setlocale(LC_ALL, "");
-	cout<< "Ôóíêöèè ñ ïðîèçâîëüíûì êîë-âîì àðãóìåíòîâ" << endl;
-	cout << "Ñóììà: "<<Sum(5, 3, 5, 8, 11, 14) << endl;
-	cout << "Ïðîèçâåäåíèå: "<<Mul( 5, 8, 11, 14, 0) << endl;
+	cout<< "Ð¤ÑƒÐ½ÐºÑ†Ð¸Ð¸ Ñ Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð»ÑŒÐ½Ñ‹Ð¼ ÐºÐ¾Ð»-Ð²Ð¾Ð¼ Ð°Ñ€Ð³ÑƒÐ¼ÐµÐ½Ñ‚Ð¾Ð²" << endl;
+	cout << "Ð¡ÑƒÐ¼Ð¼Ð°: " << Sum(5, 3, 5, 8, 11, 14) << endl;
+	cout << "ÐŸÑ€Ð¾Ð¸Ð·Ð²ÐµÐ´ÐµÐ½Ð¸Ðµ: " << Mul( 5, 8, 11, 14, 0) << endl;
 }
 
